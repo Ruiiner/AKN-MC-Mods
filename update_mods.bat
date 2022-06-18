@@ -1,5 +1,0 @@
-powershell.exe -ExecutionPolicy Bypass -Command "Invoke-WebRequest 'https://github.com/Ruiiner/AKN-MC-Mods/archive/refs/heads/main.zip' -OutFile C:\Users\%USERNAME%\AppData\Roaming\.minecraft\mods\mods.zip"
-powershell.exe -ExecutionPolicy Bypass -Command "Expand-Archive -LiteralPath 'C:\Users\%USERNAME%\AppData\Roaming\.minecraft\mods\mods.zip' -DestinationPath 'C:\Users\%USERNAME%\AppData\Roaming\.minecraft\mods'"
-powershell.exe -ExecutionPolicy Bypass -Command "Get-ChildItem -Path 'C:\Users\%USERNAME%\AppData\Roaming\.minecraft\mods\AKN-MC-Mods-main' -Recurse -File | Move-Item -Destination 'C:\Users\%USERNAME%\AppData\Roaming\.minecraft\mods'"
-powershell.exe -ExecutionPolicy Bypass -Command "Remove-Item C:\Users\%USERNAME%\AppData\Roaming\.minecraft\mods\mods.zip"
-powershell.exe -ExecutionPolicy Bypass -Command "Remove-Item -Recurse C:\Users\%USERNAME%\AppData\Roaming\.minecraft\mods\AKN-MC-Mods-main"
